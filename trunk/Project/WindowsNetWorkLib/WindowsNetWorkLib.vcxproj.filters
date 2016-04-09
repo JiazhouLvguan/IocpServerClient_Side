@@ -1,0 +1,156 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="源文件">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="头文件">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="资源文件">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="头文件\AsyNetListener">
+      <UniqueIdentifier>{7efc33da-2ffa-4dfc-b916-227ac55859ea}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="头文件\MessageDefine">
+      <UniqueIdentifier>{cb72d426-23af-4b98-8c06-f1a73033e12b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="头文件\ThreadPool">
+      <UniqueIdentifier>{73eb1547-e1bf-4dc0-8b98-16596e522551}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="源文件\AsyNetListener">
+      <UniqueIdentifier>{6f2a8f9a-a477-4598-91b3-905a3978eb83}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="源文件\ThreadPool">
+      <UniqueIdentifier>{56bf330a-7138-48b4-90c8-645f195c7fc4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="头文件\ThreadPool\AsyNetThreadPool">
+      <UniqueIdentifier>{82644a53-4cc4-4a5c-90cf-dd8b07ab2f31}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="头文件\ThreadPool\IocpBase">
+      <UniqueIdentifier>{d1f47563-7428-4890-b76f-c754141bea5f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="源文件\ThreadPool\AsyNetThreadPool">
+      <UniqueIdentifier>{872f8fbb-1920-4355-84af-ab33766565fb}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="源文件\ThreadPool\IocpBase">
+      <UniqueIdentifier>{5ad17529-afcb-4888-9e06-01fdf2540162}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="头文件\DataStruct">
+      <UniqueIdentifier>{c2cca54c-ac96-4f05-95d1-d284648d6760}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="源文件\DataStruct">
+      <UniqueIdentifier>{743f72be-1828-475e-9f2a-6bc92aafabc4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="头文件\AsyNetRemoteClient">
+      <UniqueIdentifier>{e6f72858-4f10-43d0-9161-07f96122980d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="源文件\AsyNetRemoteClient">
+      <UniqueIdentifier>{0f655cde-bd3d-42fd-86b2-b4e1fc1a8588}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="头文件\AsyNetServer">
+      <UniqueIdentifier>{0b1ff6bd-69b3-4894-a755-b99f8c58fe8b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="头文件\Observer">
+      <UniqueIdentifier>{c53d0f8b-5cc1-416a-ba02-3e88380ddd9e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="源文件\Observer">
+      <UniqueIdentifier>{0c3607fa-e0b2-4039-a1ff-c8b80d4b5947}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="源文件\AsyNetServer">
+      <UniqueIdentifier>{99faeb2a-8f5e-4165-8b65-09956158503a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="头文件\NetDefine">
+      <UniqueIdentifier>{79bf21fc-87c9-4e9e-9c6a-318362969747}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="ReadMe.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="stdafx.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="targetver.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="AsyNetListener\AsyNetListener.h">
+      <Filter>头文件\AsyNetListener</Filter>
+    </ClInclude>
+    <ClInclude Include="MessageDefine\MessageDefine.h">
+      <Filter>头文件\MessageDefine</Filter>
+    </ClInclude>
+    <ClInclude Include="ThreadPool\AsyNetThreadPool\AsyNetThreadPool.h">
+      <Filter>头文件\ThreadPool\AsyNetThreadPool</Filter>
+    </ClInclude>
+    <ClInclude Include="ThreadPool\AsyNetThreadPool\ThreadPoolBase.h">
+      <Filter>头文件\ThreadPool\AsyNetThreadPool</Filter>
+    </ClInclude>
+    <ClInclude Include="ThreadPool\IocpBase\IocpBase.h">
+      <Filter>头文件\ThreadPool\IocpBase</Filter>
+    </ClInclude>
+    <ClInclude Include="DataStruct\IocpStruct.h">
+      <Filter>头文件\DataStruct</Filter>
+    </ClInclude>
+    <ClInclude Include="DataStruct\AsyOperateBase.h">
+      <Filter>头文件\DataStruct</Filter>
+    </ClInclude>
+    <ClInclude Include="DataStruct\Primitives.h">
+      <Filter>头文件\DataStruct</Filter>
+    </ClInclude>
+    <ClInclude Include="AsyNetRemoteClient\AsyNetRemoteClient.h">
+      <Filter>头文件\AsyNetRemoteClient</Filter>
+    </ClInclude>
+    <ClInclude Include="AsyNetServer\AsyNetServer.h">
+      <Filter>头文件\AsyNetServer</Filter>
+    </ClInclude>
+    <ClInclude Include="Observer\ObserverBase.h">
+      <Filter>头文件\Observer</Filter>
+    </ClInclude>
+    <ClInclude Include="Observer\Subject.h">
+      <Filter>头文件\Observer</Filter>
+    </ClInclude>
+    <ClInclude Include="Observer\SubjectBase.h">
+      <Filter>头文件\Observer</Filter>
+    </ClInclude>
+    <ClInclude Include="NetDefine\NetDefine.h">
+      <Filter>头文件\NetDefine</Filter>
+    </ClInclude>
+    <ClInclude Include="IocpServer.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="stdafx.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="ThreadPool\AsyNetThreadPool\AsyNetThreadPool.cpp">
+      <Filter>源文件\ThreadPool\AsyNetThreadPool</Filter>
+    </ClCompile>
+    <ClCompile Include="ThreadPool\IocpBase\IocpBase.cpp">
+      <Filter>源文件\ThreadPool\IocpBase</Filter>
+    </ClCompile>
+    <ClCompile Include="AsyNetListener\AsyNetListener.cpp">
+      <Filter>源文件\AsyNetListener</Filter>
+    </ClCompile>
+    <ClCompile Include="DataStruct\AsyOperateBase.cpp">
+      <Filter>源文件\DataStruct</Filter>
+    </ClCompile>
+    <ClCompile Include="AsyNetRemoteClient\AsyNetRemoteClient.cpp">
+      <Filter>源文件\AsyNetRemoteClient</Filter>
+    </ClCompile>
+    <ClCompile Include="Observer\Subject.cpp">
+      <Filter>源文件\Observer</Filter>
+    </ClCompile>
+    <ClCompile Include="AsyNetServer\AsyNetServer.cpp">
+      <Filter>源文件\AsyNetServer</Filter>
+    </ClCompile>
+    <ClCompile Include="IocpServer.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+  </ItemGroup>
+</Project>

@@ -1,0 +1,98 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="源文件">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="头文件">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="资源文件">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="头文件\Window">
+      <UniqueIdentifier>{662a8771-24c2-40d1-9008-6a4ec5793e56}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="源文件\Window">
+      <UniqueIdentifier>{db3fad51-85cb-4c93-a336-e4b58e29c5de}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="头文件\Common">
+      <UniqueIdentifier>{892995a8-c0bc-4c5f-a208-7aaa292ad371}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="头文件\Define">
+      <UniqueIdentifier>{5c9a45ef-a05b-4240-8848-72c8fe4922df}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="ReadMe.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="stdafx.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="targetver.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="Window\BaseWindow.h">
+      <Filter>头文件\Window</Filter>
+    </ClInclude>
+    <ClInclude Include="Window\ServerWindow.h">
+      <Filter>头文件\Window</Filter>
+    </ClInclude>
+    <ClInclude Include="Common\Common.h">
+      <Filter>头文件\Common</Filter>
+    </ClInclude>
+    <ClInclude Include="resource.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="Window\ServerSettingWindow.h">
+      <Filter>头文件\Window</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Include\WindowDefine\WindowDefine.h">
+      <Filter>头文件\Define</Filter>
+    </ClInclude>
+    <ClInclude Include="Window\ModelWindow.h">
+      <Filter>头文件\Window</Filter>
+    </ClInclude>
+    <ClInclude Include="Window\MessageWindow.h">
+      <Filter>头文件\Window</Filter>
+    </ClInclude>
+    <ClInclude Include="Window\TimingCloseTranslucenceWindow.h">
+      <Filter>头文件\Window</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="stdafx.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="IocpServerClient_Side.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="Window\ServerWindow.cpp">
+      <Filter>源文件\Window</Filter>
+    </ClCompile>
+    <ClCompile Include="Window\ServerSettingWindow.cpp">
+      <Filter>源文件\Window</Filter>
+    </ClCompile>
+    <ClCompile Include="Window\ModelWindow.cpp">
+      <Filter>源文件\Window</Filter>
+    </ClCompile>
+    <ClCompile Include="Window\MessageWindow.cpp">
+      <Filter>源文件\Window</Filter>
+    </ClCompile>
+    <ClCompile Include="Window\TimingCloseTranslucenceWindow.cpp">
+      <Filter>源文件\Window</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="IocpServerClient_Side.rc">
+      <Filter>资源文件</Filter>
+    </ResourceCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Res\Res.zip" />
+  </ItemGroup>
+</Project>
