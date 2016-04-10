@@ -5,7 +5,7 @@
 # to native line endings on checkout.
 *.txt text
 *.cpp linguist-language=C++
-*.c linguist-language=C
+*.c linguist-language=C++
 *.h linguist-language=C++
 *.html text
 *.xhtml text
