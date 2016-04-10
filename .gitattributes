@@ -1,12 +1,12 @@
 # Set default behaviour, in case users don't have core.autocrlf set.
-* text=auto
+* text=C++
 
 # Explicitly declare text files we want to always be normalized and converted 
 # to native line endings on checkout.
 *.txt text
-*.cpp linguist-language=C++
-*.c linguist-language=C++
-*.h linguist-language=C++
+*.cpp text
+*.c text
+*.h text
 *.html text
 *.xhtml text
 *.css text
