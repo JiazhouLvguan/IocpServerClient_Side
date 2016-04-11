@@ -39,6 +39,8 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "CppSqlite", "CppSqlite\CppS
 		{7776FD8C-C376-46BD-AE16-45C3B5ECF431} = {7776FD8C-C376-46BD-AE16-45C3B5ECF431}
 	EndProjectSection
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "LogLib", "LogLib\LogLib.vcxproj", "{62E9F9B1-20A8-464C-A1E0-A5BA3FA66A99}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Win32 = Debug|Win32
@@ -81,6 +83,10 @@ Global
 		{85EA5495-198F-44BF-AE62-74BC8D294A8D}.Debug|Win32.Build.0 = Debug|Win32
 		{85EA5495-198F-44BF-AE62-74BC8D294A8D}.Release|Win32.ActiveCfg = Release|Win32
 		{85EA5495-198F-44BF-AE62-74BC8D294A8D}.Release|Win32.Build.0 = Release|Win32
+		{62E9F9B1-20A8-464C-A1E0-A5BA3FA66A99}.Debug|Win32.ActiveCfg = Debug|Win32
+		{62E9F9B1-20A8-464C-A1E0-A5BA3FA66A99}.Debug|Win32.Build.0 = Debug|Win32
+		{62E9F9B1-20A8-464C-A1E0-A5BA3FA66A99}.Release|Win32.ActiveCfg = Release|Win32
+		{62E9F9B1-20A8-464C-A1E0-A5BA3FA66A99}.Release|Win32.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
