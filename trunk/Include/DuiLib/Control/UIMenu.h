@@ -16,6 +16,13 @@ struct ContextMenuParam
 	HWND hWnd;
 };
 
+
+struct tagInfoPostByMenu
+{
+	CDuiString   msgSenderName;
+	CControlUI*  controlUnderTheMenu;
+};
+
 struct MenuCmd
 {
 	TCHAR szName[256];
@@ -36,7 +43,7 @@ enum MenuAlignment
 enum MenuItemDefaultInfo
 {
 	ITEM_DEFAULT_HEIGHT = 30,		//每一个item的默认高度（只在竖状排列时自定义）
-	ITEM_DEFAULT_WIDTH = 150,		//窗口的默认宽度
+	ITEM_DEFAULT_WIDTH = 100,		//窗口的默认宽度
 
 	ITEM_DEFAULT_ICON_WIDTH = 26,	//默认图标所占宽度
 	ITEM_DEFAULT_ICON_SIZE = 16,	//默认图标的大小
@@ -267,6 +274,8 @@ public:
 /////////////////////////////////////////////////////////////////////////////////////
 //
 
+static CControlUI*  s_pControlUnderTheMenu;
+
 class CMenuElementUI;
 class UILIB_API CMenuWnd : public CWindowWnd, public MenuReceiverImpl, public INotifyUI, public IDialogBuilderCallback
 {
@@ -275,6 +284,12 @@ public:
 	{
 		static MenuObserverImpl s_context_menu_observer;
 		return s_context_menu_observer;
+	}
+
+	static CControlUI* GetTheControlUnderTheMenu()
+	{
+		///////\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\////////////////////////////////添加控件 2015/9/8 zhoufan
+		return s_pControlUnderTheMenu;
 	}
 
 public:
@@ -312,6 +327,9 @@ public:
 
 	// 重新调整子菜单的大小
 	void ResizeSubMenu();
+
+	///////\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\////////////////////////////////添加控件 2015/9/8 zhoufan
+	void SetTheControlUnderTheMenu(CControlUI*);
 
 public:
 

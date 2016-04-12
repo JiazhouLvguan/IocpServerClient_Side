@@ -123,11 +123,12 @@ namespace DuiLib {
 		m_xml(_T(""))
 	{
 		m_dwAlignment = eMenuAlignment_Left | eMenuAlignment_Top;
+		s_pControlUnderTheMenu = NULL;
 	}
 
 	CMenuWnd::~CMenuWnd()
 	{
-
+		s_pControlUnderTheMenu = NULL;
 	}
 
 	BOOL CMenuWnd::Receive(ContextMenuParam param)
@@ -454,6 +455,11 @@ namespace DuiLib {
 
 	}
 
+	void CMenuWnd::SetTheControlUnderTheMenu(CControlUI* theControlUnderTheMenu)
+	{
+		s_pControlUnderTheMenu = theControlUnderTheMenu;
+	}
+
 
 	LRESULT CMenuWnd::OnKillFocus(UINT uMsg, WPARAM wParam, LPARAM lParam, BOOL& bHandled)
 	{
@@ -773,25 +779,53 @@ namespace DuiLib {
 				{
 					SetChecked(!GetChecked());
 
-					MenuCmd* pMenuCmd = new MenuCmd();
-					lstrcpy(pMenuCmd->szName, GetName().GetData());
-					lstrcpy(pMenuCmd->szUserData, GetUserData().GetData());
-					lstrcpy(pMenuCmd->szText, GetText().GetData());
-					pMenuCmd->bChecked = GetChecked();
+					/*
+						MenuCmd* pMenuCmd = new MenuCmd();
+						lstrcpy(pMenuCmd->szName, GetName().GetData());
+						lstrcpy(pMenuCmd->szUserData, GetUserData().GetData());
+						lstrcpy(pMenuCmd->szText, GetText().GetData());
+						pMenuCmd->bChecked = GetChecked();
 
+						ContextMenuParam param;
+						param.hWnd = m_pManager->GetPaintWindow();
+						param.wParam = 1;
+						CMenuWnd::GetGlobalContextMenuObserver().RBroadcast(param);
+
+						if (CMenuWnd::GetGlobalContextMenuObserver().GetManager() != NULL)
+						{
+							if (!PostMessage(CMenuWnd::GetGlobalContextMenuObserver().GetManager()->GetPaintWindow(), WM_MENUCLICK, (WPARAM)pMenuCmd, NULL))
+							{
+								delete pMenuCmd;
+								pMenuCmd = NULL;
+							}
+						}
+					*/
+					
+
+
+					if (CMenuWnd::GetGlobalContextMenuObserver().GetManager() != NULL)
+					{
+						//////////////////////////////////////////////////////////////////////////////2015.9.8
+						tagInfoPostByMenu* infoPost = new tagInfoPostByMenu();
+						CControlUI* controlTest = CMenuWnd::GetTheControlUnderTheMenu();
+						infoPost->controlUnderTheMenu = CMenuWnd::GetTheControlUnderTheMenu();
+						infoPost->msgSenderName = GetName().GetData();
+
+						PostMessage(CMenuWnd::GetGlobalContextMenuObserver().GetManager()->GetPaintWindow(), WM_MENUCLICK, (WPARAM)(infoPost), (LPARAM)(GetChecked() == TRUE));
+						//delete infoPost;
+						//infoPost = NULL;
+
+						/*
+
+						CDuiString* strPost = new CDuiString(GetName().GetData());
+						if (!PostMessage(CMenuWnd::GetGlobalContextMenuObserver().GetManager()->GetPaintWindow(), WM_MENUCLICK, (WPARAM)(strPost), (LPARAM)(GetChecked() == TRUE)))
+						delete strPost;
+						*/
+					}
 					ContextMenuParam param;
 					param.hWnd = m_pManager->GetPaintWindow();
 					param.wParam = 1;
 					CMenuWnd::GetGlobalContextMenuObserver().RBroadcast(param);
-
-					if (CMenuWnd::GetGlobalContextMenuObserver().GetManager() != NULL)
-					{
-						if (!PostMessage(CMenuWnd::GetGlobalContextMenuObserver().GetManager()->GetPaintWindow(), WM_MENUCLICK, (WPARAM)pMenuCmd, NULL))
-						{
-							delete pMenuCmd;
-							pMenuCmd = NULL;
-						}
-					}
 				}
 			}
 

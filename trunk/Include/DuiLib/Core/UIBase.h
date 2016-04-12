@@ -79,6 +79,10 @@ namespace DuiLib {
 		UINT ShowModal(HWND);
 		void Close(UINT nRet = IDOK);
 		void CenterWindow();	// 居中，支持扩展屏幕
+
+		//设置窗体距离底部的距离
+		void SetWindowPosByDistanceOfBottom(int nBottom);
+
 		void SetIcon(UINT nRes);
 
 		LRESULT SendMessage(UINT uMsg, WPARAM wParam = 0, LPARAM lParam = 0L);

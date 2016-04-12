@@ -42,12 +42,16 @@ namespace DuiLib
 
 		void SetHotBkColor(DWORD dwColor);
 		DWORD GetHotBkColor() const;
+		void SetHotBorderColor(DWORD dwColor);
+		DWORD GetHotBorderColor() const;
 		void SetPushedBkColor(DWORD dwColor);
 		DWORD GetPushedBkColor() const;
 		void SetHotTextColor(DWORD dwColor);
 		DWORD GetHotTextColor() const;
 		void SetPushedTextColor(DWORD dwColor);
 		DWORD GetPushedTextColor() const;
+		void SetPushedBorderColor(DWORD dwColor);
+		DWORD GetPushedBorderColor() const;
 		void SetFocusedTextColor(DWORD dwColor);
 		DWORD GetFocusedTextColor() const;
 		//SIZE EstimateSize(SIZE szAvailable);
@@ -56,13 +60,17 @@ namespace DuiLib
 		void PaintText(HDC hDC);
 		void PaintStatusImage(HDC hDC);
 
+		void PaintBorder(HDC hDC);
+
 	protected:
 		UINT m_uButtonState;
 
 		DWORD m_dwHotBkColor;
+		DWORD m_dwHotBorderColor;
 		DWORD m_dwPushedBkColor;
 		DWORD m_dwHotTextColor;
 		DWORD m_dwPushedTextColor;
+		DWORD m_dwPushedBorderColor;
 		DWORD m_dwFocusedTextColor;
 
 		CDuiString m_sNormalImage;
